@@ -4,3 +4,21 @@ color:#ECECEC;
 font-family:tahoma;
 font-size:1em;
 }
+
+h1 {
+    font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+    font-size: 50px;
+    line-height: 65px;
+}
+ 
+ul, p {
+    font-family: 'Vollkorn', Georgia, Times, serif;
+    font-size: 16px;
+    line-height: 25px;
+}
+
+.navcontainer ul.nav{list-style:none; margin:0; padding:0.5em 0; text-transform:uppercase;}
+.navcontainer ul.nav li{display:inline;}
+.navcontainer ul.nav a{display:inline-block;padding:10px; color:#ececec;}
+.navcontainer ul.nav a:hover{text-decoration:none; color:#bcbcbc; background:none;}
+.navcontainer ul.nav li.selected a{color:#0088cc;}

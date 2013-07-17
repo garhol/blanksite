@@ -14,8 +14,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     
     {% block "extrameta" %} {% endblock %}
+<link href="http://fonts.googleapis.com/css?family=Ubuntu:bold" rel="stylesheet" type="text/css">
+<link href="http://fonts.googleapis.com/css?family=Vollkorn" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="{{ MEDIA_URL }}css/bootstrap.css">
+    <link rel="stylesheet" href="{{ MEDIA_URL }}css/bootstrap-responsive.css">
     <link href="{{ MEDIA_URL }}css/blanksite.css" rel="stylesheet" media="screen">
+    
     
     {{ form.media }}
     {% block "css" %}
@@ -35,17 +39,18 @@
 		  <header>
                {% block "header" %}
                     <div class="container">
+						<h1>Blank site</h1>
                     </div>
                 {% endblock "header" %}
                 <div class="navcontainer">
                     {% block "nav" %}
                     <ul class="nav">
                         <li><a {% if request.path == '/' %} class="active"{% endif %} href="/">Home</a></li>
-                        <li><a {% if '/photography/' in request.path %} class="active"{% endif %} href="/news/">Photography</a></li>
-                        <li><a {% if '/web/' in request.path %} class="active"{% endif %} href="/news/">Web</a></li>
-                        <li><a {% if '/design/' in request.path %} class="active"{% endif %} href="/news/">Design</a></li>
-                        <li><a {% if '/games/' in request.path %} class="active"{% endif %} href="/news/">Games</a></li>
-                        <li><a {% if '/music/' in request.path %} class="active"{% endif %} href="/news/">Music</a></li>
+                        <li><a {% if '/photography/' in request.path %} class="active"{% endif %} href="/photography/">Photography</a></li>
+                        <li><a {% if '/web/' in request.path %} class="active"{% endif %} href="/web/">Web</a></li>
+                        <li><a {% if '/design/' in request.path %} class="active"{% endif %} href="/design/">Design</a></li>
+                        <li><a {% if '/games/' in request.path %} class="active"{% endif %} href="/games/">Games</a></li>
+                        <li><a {% if '/music/' in request.path %} class="active"{% endif %} href="/music/">Music</a></li>
                     </ul>
                     {% endblock "nav" %}
                 </div>
