@@ -26,7 +26,7 @@ if settings.DEBUG:
         }),
     )
     urlpatterns += patterns('',
-        url(r'^library/(?P<path>.*)$', 'django.views.static.serve', {
+        url(r'^media/(?P<path>.*)$', 'django.views.static.serve', {
             'document_root': settings.MEDIA_ROOT,
         }),
     )+static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
